@@ -6,4 +6,6 @@
       Welcome to our shity webpage
     </p>
   </body>
-</html>
+<?php
+  include_once 'php/footer.php' ;
+?>
