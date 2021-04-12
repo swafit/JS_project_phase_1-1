@@ -8,7 +8,5 @@
   </head>
   <header>
     <h1>JS Project: to be named</h1>
-    <p>
-      RANDOM COMMENT
-    </p>
+    <p>Random comment</p>
   </header>
