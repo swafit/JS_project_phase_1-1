@@ -4,9 +4,4 @@
     <meta charset="utf-8">
     <title>Home</title>
   </head>
-  <body>
-      <p>
-        Welcome to our shity webpage
-      </p>
-  </body>
-</html>
+  
