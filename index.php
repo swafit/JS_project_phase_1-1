@@ -1,8 +1,6 @@
-<!--Splitting the header and footer into separate documents makes things easier!-->
 <?php
   include_once 'header.php';
 ?>
-
 <section class="index-intro">
   <h1>This Is An Introduction</h1>
   <p>Here is an important paragraph that explains the purpose of the website and why you are here!</p>
