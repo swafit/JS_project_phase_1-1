@@ -22,10 +22,10 @@ if (isset($_POST["submit"])) {
 		exit();
   }
 	// Proper username chosen
-  if (invalidUid($uid) !== false) {
+  /*if (invalidUid($uid) !== false) {
     header("location: ../signup.php?error=invaliduid");
 		exit();
-  }
+  }*/
   // Proper email chosen
   if (invalidEmail($email) !== false) {
     header("location: ../signup.php?error=invalidemail");
