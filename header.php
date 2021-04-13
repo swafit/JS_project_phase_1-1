@@ -1,14 +1,13 @@
 <?php
-//session_start();
-//include_once 'includes/functions.inc.php';
+session_start();
+include_once 'includes/functions.inc.php';
 ?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Project</title>
-    <!--I won't do more than barebone HTML, since this isn't an HTML tutorial.-->
+    <title>JS Project</title>
     <!--William Chalifoux-->
     <!--Bradley Keith Steben -->
     <!-- Duncan BH-->
