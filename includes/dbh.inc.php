@@ -1,9 +1,9 @@
 <?php
 
 $servername = "localhost";
-$dBUsername = "root";
-$dBPassword = "";
-$dBName = "phpproject01";
+$dBUsername = "id15043840_root";
+$dBPassword = "3cJtYD$?.p,864q";
+$dBName = "id15043840_jsprojectdb";
 
 $conn = mysqli_connect($servername, $dBUsername, $dBPassword, $dBName);
 
