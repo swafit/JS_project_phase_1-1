@@ -1,18 +1,3 @@
-/*
-.index-main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} 
-.index-main-list div {
-    width: 24%;
-    height: 200px;
-    background-color: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/**/
 .index-main-list {
     display: flex;
     align-items: center;
