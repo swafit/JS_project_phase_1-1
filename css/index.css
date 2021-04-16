@@ -15,3 +15,6 @@
 .index-main-list div:first-of-type {
     width: 60%;
 }
+nav div.wrapper{
+  background-color:black;
+}
