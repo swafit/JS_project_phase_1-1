@@ -11,20 +11,17 @@
     background-color: #ccc;
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #151537;
     margin-left: 0;
 }
 .index-main-list div:first-of-type {
     width: 60%;
     margin-right: 0;
+    justify-content: right;
 }
 .index-main-list div:first-of-type img {
-    height: 95%;
+    height: 50%;
 }
-/* nav div.wrapper{
-  background-color:black;
-} */
 
 .home-categories-list {
     display: flex;
@@ -37,20 +34,20 @@
 }
   
 .home-categories-list div {
-    width: 49%;
-    height: 200px;
+    width: 47%;
     background-color: #151537;
     display: flex;
     /* justify-content: center; */
-    align-items: center;
+    align-items: normal;
     margin: 5px auto;
 }
 
 .gameBox {
     padding: 5px;
+    height: 200px;
 }
 .gameBox img {
-    height: 95%;
+    height: 100%;
     object-fit: contain;
     margin-right: 0;
     justify-self: left;
@@ -58,6 +55,8 @@
 
 .gameBox h3 {
     margin-left: 0;
+    text-align: center;
+    width: 100%;
 }
 
 .wrapper {
