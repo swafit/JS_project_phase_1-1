@@ -1,20 +1,66 @@
 .index-main-list {
     display: flex;
     align-items: center;
+    width: 100%;
+    margin: auto 5%;
 }
 
 .index-main-list div {
-    width: 20%;
-    height: 200px;
+    width: 30%;
+    height: 300px;
     background-color: #ccc;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #151537;
+    margin-left: 0;
 }
 .index-main-list div:first-of-type {
     width: 60%;
+    margin-right: 0;
+}
+.index-main-list div:first-of-type img {
+    height: 95%;
 }
 /* nav div.wrapper{
   background-color:black;
 } */
+
+.home-categories-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.home-categories-row {
+    flex-direction: row;
+}
+  
+.home-categories-list div {
+    width: 49%;
+    height: 200px;
+    background-color: #151537;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 5px auto;
+}
+
+.gameBox {
+    padding: 5px;
+}
+.gameBox img {
+    height: 95%;
+    object-fit: contain;
+    margin-right: 0;
+    justify-self: left;
+}
+
+.gameBox h3 {
+    margin-left: 0;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
