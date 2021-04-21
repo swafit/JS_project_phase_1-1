@@ -1,50 +1,63 @@
-.index-main-list {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: auto 5%;
+/*Container set up*/
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 10px;
 }
 
-.index-main-list div {
-    width: 30%;
-    height: 300px;
-    background-color: #ccc;
-    display: flex;
-    justify-content: center;
-    background-color: #151537;
-    margin-left: 0;
+.home-menu {
+    padding: 10px 3%;
 }
-.index-main-list div:first-of-type {
-    width: 60%;
-    margin-right: 0;
-    justify-content: right;
-}
-.index-main-list div:first-of-type img {
-    height: 50%;
-}
-
-.home-categories-list {
+.home-menu-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
-.home-categories-row {
+.home-menu-row {
     flex-direction: row;
 }
   
-.home-categories-list div {
-    width: 47%;
+.home-menu-list div {
     background-color: #151537;
     display: flex;
-    /* justify-content: center; */
     align-items: normal;
     margin: 5px auto;
 }
 
-.gameBox {
+/*Main center box*/
+.presenterBox {
     padding: 5px;
     height: 200px;
+    width: 60%;
+}
+.presenterBox img {
+    height: 100%;
+    object-fit: contain;
+    margin-right: 0;
+    justify-self: left;
+}
+.presenterBox div {
+    flex-direction: column;
+}
+.presenterBox h3 {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+}
+.presenterBox p {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+}
+
+/*Small gamebox set up*/
+.gameBox {
+    width: 47%;
+    padding: 5px;
+    height: 150px;
 }
 .gameBox img {
     height: 100%;
@@ -52,14 +65,18 @@
     margin-right: 0;
     justify-self: left;
 }
-
+.gameBox div {
+    flex-direction: column;
+}
 .gameBox h3 {
     margin-left: 0;
     text-align: center;
     width: 100%;
+    height: fit-content;
 }
-
-.wrapper {
-    width: 1200px;
-    margin: 0 auto;
+.gameBox p {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
 }
