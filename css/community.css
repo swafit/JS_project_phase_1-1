@@ -1,0 +1,50 @@
+/*Container set up*/
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.home-menu {
+    padding: 10px 3%;
+}
+.home-menu-list {
+    display: flex;
+    align-items: left;
+    flex-wrap: wrap;
+}
+.home-menu-row {
+    flex-direction: row;
+}
+  
+.home-menu-list div {
+    background-color: #151537;
+    display: block;
+    align-items: normal;
+    margin: 5px auto;
+}
+
+/*Main center box*/
+.presenterBox {
+    padding: 5px 2%;
+    height: fit-content;
+    width: 60%;
+}
+.presenterBox div {
+    flex-direction: column;
+}
+.presenterBox h2 {
+    margin-left: 0;
+    text-align: left;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0 0 0;
+}
+.presenterBox p {
+    margin-left: 0;
+    width: 100%;
+    height: fit-content;
+}
+.commentBox {
+    width: 100%;
+}
