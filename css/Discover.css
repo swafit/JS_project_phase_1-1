@@ -50,7 +50,7 @@
   padding: 10px 0 0 0;
 }
 .presenterBox p {
-  margin-left: 0;
+  margin-left: 10px;
   width: 100%;
   height: fit-content;
 }
