@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/community.css">
-    <script src="js/script.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script src="js/comments.js"></script>
   </head>
 
   <body>
@@ -42,78 +46,24 @@
       <div>
         <h2>Leave a Comment!</h2>
         <hr>
-        <form>
+        <form method="POST">
           <input type="text" id="user" placeholder="Username">
           <br>
           <textarea id="comment" rows="5" class="commentBox" placeholder="Insert your comment here..."></textarea>
         </form>
+        <Button id="addComment">Submit</Button>
       </div>
     </div>
   </div>
 </section>
 
 <section class="home-menu">
-  <div class="home-menu-list">
-    <div class="presenterBox">
+  <div class="home-menu-list" id="commentContainer">   
+    <div class="presenterBox" id="connectError">
       <div>
-        <h2>Username</h2>
-        <hr>
-        <p>
-          Comment Comment Comment Comment Comment Comment
-          Comment Comment Comment Comment Comment Comment
-          Comment Comment Comment Comment Comment Comment
-          Comment Comment Comment Comment Comment Comment
-        </p>
+          <h1>---Cannot Reach Server---</h2>
       </div>
-    </div>
-    <div class="presenterBox">
-      <div>
-        <h2>Username</h2>
-        <hr>
-        <p>
-          Comment Comment Comment Comment Comment Comment
-          Comment Comment Comment Comment Comment Comment
-          Comment Comment Comment Comment Comment Comment
-          Comment Comment Comment Comment Comment Comment
-        </p>
-      </div>
-    </div>
-    <div class="presenterBox">
-      <div>
-        <h2>Username</h2>
-        <hr>
-        <p>
-          Comment Comment Comment Comment Comment Comment
-          Comment Comment Comment Comment Comment Comment
-          Comment Comment Comment Comment Comment Comment
-          Comment Comment Comment Comment Comment Comment
-        </p>
-      </div>
-    </div>
-    <div class="presenterBox">
-      <div>
-        <h2>Username</h2>
-        <hr>
-        <p>
-          Comment Comment Comment Comment Comment Comment
-          Comment Comment Comment Comment Comment Comment
-          Comment Comment Comment Comment Comment Comment
-          Comment Comment Comment Comment Comment Comment
-        </p>
-      </div>
-    </div>
-    <div class="presenterBox">
-      <div>
-        <h2>Username</h2>
-        <hr>
-        <p>
-          Comment Comment Comment Comment Comment Comment
-          Comment Comment Comment Comment Comment Comment
-          Comment Comment Comment Comment Comment Comment
-          Comment Comment Comment Comment Comment Comment
-        </p>
-      </div>
-    </div>
+      </div> 
   </div>
 </section>
 
