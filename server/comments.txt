@@ -1,4 +1,3 @@
-Gamer_Man_420, Condense Games is such a fantastic service allowing me and my family to easily get games we want to play together.
 Alice, comment1
 Bob, comment2
 Charles, comment3
@@ -7,3 +6,4 @@ Eve, comment5
 Frank, comment6
 George, comment7
 Harold, comment8
+Gamer_Man_420, Condense Games is such a fantastic service allowing me and my family to easily get games we want to play together.
