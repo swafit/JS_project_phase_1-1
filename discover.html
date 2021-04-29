@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/Discover.css">
     <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -56,6 +59,14 @@
       <h3>Why do we do this?</h3>
       <p>-We really like passing our classes!</p>
       <p class="footNote">If you have any further questions, please email us at CondenseGames@gmail.com</p>
+      <div class="footNote">
+        <img id="zoffy" width="16" src="img/Zoffy.png">
+        <script>
+          $('#zoffy').hover( function() {
+            $(this).toggleClass("big");
+          } );
+      </script>
+      </div>
     </div>
   </div>
 </section>

@@ -57,7 +57,13 @@
 .commentBox {
   width: 100%;
 }
-p.footNote {
+.footNote {
   text-align: center;
   margin: 15px 0; 
+}
+.footNote img {
+  border-radius: 50%; 
+}
+.big {
+  width: 100%;
 }
