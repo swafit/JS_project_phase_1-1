@@ -1,48 +1,12 @@
 (function() {
-    const URL = "http://localhost:8081/getComment";
+    const URL = "http://localhost:8081/getGames";
   
     window.addEventListener("load", initialize);
   
     //getData to read comments from file and place on page, the event listener 
     function initialize() {
         getData();
-        $("addComment").addEventListener("click", addComment );
     }
-
-    //add new comment
-    function addComment() {
-        //get values
-        let user = $("user").value;
-        let comment = $("comment").value;
-
-        //return if either field is empty
-        if (user == "" || comment == "") {
-            return;
-        }
-
-        //add new comment to page
-        try {
-        $("commentContainer").insertAdjacentHTML( "afterbegin",
-        `<div class="presenterBox">
-        <div>
-            <h2>`+ user +`</h2>
-            <hr>
-            <p>
-            `+ comment +`
-            </p>
-        </div>
-        </div>`);
-        }
-        catch (err) {
-            console.error(err);
-        }
-            
-
-        //reset fields
-        $("user").value = "";
-        $("comment").value = "";
-    }
-    /**/
   
     /**
      * Get comments from server and call showData
@@ -72,23 +36,41 @@
      */
     function showData(responseFromServer) {
         //split response on linebreaks
-        let comments = responseFromServer.split("\n");
-                
+        let games = responseFromServer.split("\n");
+        
+        shuffleArray(games);
+
+        first = true;
+
         //for each response split
-        comments.forEach(responseLine => {
+        games.forEach(responseLine => {
             //split line, into array on ","
-            let comment = responseLine.split(",");
+            let game = responseLine.split(",");
                 
+            if (first) {
+                $("featured").insertAdjacentHTML( "afterbegin",
+                    `<div class="presenterBox">
+                    <img src="${game[0]}">
+                    <div>
+                    <h3>${game[1]}</h3>
+                    <p>${game[2]}</p>
+                    <p>${game[3]}</p>
+                    </div>
+                    </div>`
+                )
+                first = false;
+                return;
+            }
+            
             //at begininng of comment box, add new comment obj, first part of array is username, second is comment
-            $("commentContainer").insertAdjacentHTML( "afterbegin",
-            `<div class="presenterBox">
-            <div>
-                <h2>`+ comment[0] +`</h2>
-                <hr>
-                <p>
-                `+ comment[1] +`
-                </p>
-            </div>
+            $("games").insertAdjacentHTML( "afterbegin",
+            `<div class="gameBox">
+                <img src="${game[0]}">
+                <div>
+                    <h3>${game[1]}</h3>
+                    <p>${game[2]}</p>
+                    <p>${game[3]}</p>
+                </div>
             </div>`
             );
             $("connectError").style.display = "none";
@@ -96,6 +78,15 @@
     }
   
     /* ------------------------------ Helper Functions  ------------------------------ */
+    /* Randomize array in-place using Durstenfeld shuffle algorithm */
+    function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+    }
   
     /**
      * Returns the element that has the ID attribute with the specified value.
