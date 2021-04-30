@@ -7,3 +7,5 @@ https://cdn.cloudflare.steamstatic.com/steam/apps/1407200/header.jpg?t=161965268
 https://cdn.cloudflare.steamstatic.com/steam/apps/892970/header.jpg?t=1617258628, Valheim, Open World - Simulation - Survival, $22.79
 https://cdn.cloudflare.steamstatic.com/steam/apps/848350/header.jpg?t=1604952961, Katamari Damacy REROLL, Casual - Action - Sureal, $39.99
 https://cdn.cloudflare.steamstatic.com/steam/apps/440/header.jpg?t=1592263852, Team Fortress 2, FPS - Multiplayer - Action, Free to play!
+https://cdn.cloudflare.steamstatic.com/steam/apps/524220/header.jpg?t=1601026299, NieR:Automata, Story Rich - Adventure - Robots, $26.75
+https://cdn.cloudflare.steamstatic.com/steam/apps/1235140/header.jpg?t=1616605666, Yakuza: Like A Dragon, Action - Mafia - Turn-Based, $55.99v
