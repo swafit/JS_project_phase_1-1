@@ -52,6 +52,9 @@
     width: 100%;
     height: fit-content;
 }
+.center {
+    text-align: center;
+}
 
 /*Small gamebox set up*/
 .gameBox {
